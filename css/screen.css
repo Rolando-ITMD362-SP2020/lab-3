@@ -385,6 +385,7 @@ html {
   /* 26px / ~ 120% */
   text-rendering: optimizeLegibility;
   font-family: 'BenchNine', Arial, sans-serif;
+  background-color: #D3D3D3;
 }
 
 label {
@@ -392,8 +393,7 @@ label {
 }
 
 h1,
-p,
-h3 {
+p {
   text-align: center;
   overflow: hidden;
   display: -webkit-box;
@@ -401,34 +401,50 @@ h3 {
   -webkit-box-orient: vertical;
 }
 
-form>ol>li {
+
+/* form>ol>li {
   padding-top: 1em;
-}
+} */
+
+
+/*greyscale palette: https://paletton.com/#uid=1000u0k00ji00qv00mN07fL0Kcg*/
 
 form>ol>li>input {
   border-top-style: hidden;
   border-right-style: hidden;
   border-left-style: hidden;
   border-bottom-style: hidden;
-  background-color: #F3F3F4;
+  background-color: #7E7D7D;
   color: #040836;
-  font-family: 'Ropa Sans', Arial, sans-serif;
+  font-family: 'BenchNine', Arial, sans-serif;
   font-size: 1.44em;
-}
-
-form>ol>li>label {
-  padding-bottom: 0.335em;
-  display: block;
-  text-align: center;
-}
-
-form>ol>li>input {
   display: block;
   margin: auto;
   width: 95%;
 }
 
-@media screen and (min-width: 480px) {}
+form>ol>li>label {
+  padding-bottom: 0.335em;
+  padding-top: 0.5em;
+  display: block;
+  text-align: center;
+  position: relative;
+}
+
+form>ol>li>input {}
+
+#age-verification {
+  /* position: inherit; */
+  height: 25px;
+  width: 25px;
+  background-color: #625F5F;
+  vertical-align: bottom;
+  position: relative;
+}
+
+#submit {
+  background-color: #b6b6b6;
+}
 
 @media screen and (min-width: 960px) {
   form>ol>li>label {
