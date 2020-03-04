@@ -431,8 +431,6 @@ form>ol>li>label {
   position: relative;
 }
 
-form>ol>li>input {}
-
 #age-verification {
   /* position: inherit; */
   height: 25px;
@@ -440,6 +438,11 @@ form>ol>li>input {}
   background-color: #625F5F;
   vertical-align: bottom;
   position: relative;
+  padding-top: 0.5em;
+}
+
+#input-email {
+  padding-bottom: 0.5em;
 }
 
 #submit {
